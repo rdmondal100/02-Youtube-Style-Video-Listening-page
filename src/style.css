@@ -1,0 +1,172 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#videoSearch {
+    width: 100%;
+    max-width: 500px;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    border: none;
+    color: #000;
+}
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}.videoCardWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 320px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.videoCardWrapper:hover {
+    transform: translateY(-5px);
+}
+
+.videoCard {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-decoration: none;
+    color: inherit;
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.videoInfo {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 12px;
+    padding: 12px;
+    align-items: start;
+}
+
+.channelAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.videoText {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.videoTitle {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.channelName {
+    font-size: 14px;
+    color: #777;
+}
+
+.no-search-result{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.no-result{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #777;
+    text-align: center;
+}
+.try-diff-keyword{
+    font-size: medium;
+    text-align: center;
+    color: #777;
+
+}
+.error{
+    font-size: large;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    .videos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .videos-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
