@@ -44,11 +44,11 @@ https://freeapi.hashnode.space/api-guide/apireference/getYoutubeVideos
 ## Installation & Setup
 ### 1. Clone the repository:
 ``` 
-git clone https://github.com/rdmondal100/02-Youtube-Style-Video-Listening-page.git
+git clone https://github.com/rdmondal100/02-Youtube-Style-Video-Listing-page.git
 ```
 ### 2. Navigate to the project folder:
 ``` 
-cd 02-Youtube-Style-Video-Listening-page
+cd 02-Youtube-Style-Video-Listing-page
 ```
 ### 3. Open index.html in a browser
 
