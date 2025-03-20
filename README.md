@@ -53,7 +53,7 @@ cd 02-Youtube-Style-Video-Listening-page
 ### 3. Open index.html in a browser
 
 ## Deployment
-Live Demo: [Visit the live project]()
+Live Demo: [Visit the live project](https://masterjiyoutubepage.netlify.app/)
 
 
 ## Connect with me
